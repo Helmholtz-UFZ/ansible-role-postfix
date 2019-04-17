@@ -77,6 +77,14 @@ postfix_masquerade_domains:
   - example.org
 ```
 
+You can also reference your domain directly if you have set the
+`postfix_domain` variable:
+
+```yml
+postfix_masquerade_domains:
+  - $mydomain
+```
+
 Addresses that will be changed by masquerading:
 
 ```yml
